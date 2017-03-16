@@ -1,6 +1,8 @@
 # DesignPattern
 Sources: "Head First Design Pattern"
 
-## DecoratorPattern
+## [DecoratorPattern](https://github.com/aiRoyi/DesignPattern/blob/master/DecoratorPattern/DecoratorPattern.md)
 
-![](/DesignPattern/DecoratorPattern/StarBuzzDesign.png)
+## [ObserverPattern](https://github.com/aiRoyi/DesignPattern/blob/master/ObserverPattern/ObserverPattern.md)
+
+## [StrategyPattern](https://github.com/aiRoyi/DesignPattern/blob/master/StrategyPattern/StrategyPattern.md)
