@@ -3,4 +3,4 @@ Sources: "Head First Design Pattern"
 
 ## DecoratorPattern
 
-![](/DesignPattern/DecoratorPattern/DecoratorPattern.md)
+![](/DesignPattern/DecoratorPattern/StarBuzzDesign.png)
