@@ -8,18 +8,18 @@ namespace Duck
 {
     public interface QuackBehavior
     {
-        void quack();
+        void Quack();
     }
-    public class Quack : QuackBehavior
+    public class DuckQuack : QuackBehavior
     {
-        public void quack()
+        public void Quack()
         {
             Console.WriteLine("Quack");
         }
     }
     public class QuackWithDuckCall : QuackBehavior
     {
-        public void quack()
+        public void Quack()
         {
             
         }

@@ -10,10 +10,10 @@ namespace Duck
     {
         public ModelDuck()
         {
-            flyBehavior = new FlyNoWay();
-            quackBehavior = new Quack();
+            FlyBehavior = new FlyNoWay();
+            QuackBehavior = new DuckQuack();
         }
-        public override void display()
+        public override void Display()
         {
             Console.WriteLine("I'm model duck");
         }

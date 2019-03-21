@@ -8,25 +8,25 @@ namespace Duck
 {
     public interface FlyBehavior
     {
-        void fly();
+        void Fly();
     }
     class FlyWithWings : FlyBehavior
     {
-        public void fly()
+        public void Fly()
         {
             Console.WriteLine("Flying!");
         }
     }
     class FlyNoWay : FlyBehavior
     {
-        public void fly()
+        public void Fly()
         {
             Console.WriteLine("I can't fly");
         }
     }
     public class FlyRocketPowered : FlyBehavior
     {
-        public void fly()
+        public void Fly()
         {
             Console.WriteLine("I'm flying with a rocket");
         }

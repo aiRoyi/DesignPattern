@@ -11,13 +11,13 @@ namespace Duck
         static void Main(string[] args)
         {
             Duck mallard = new MallardDuck();
-            mallard.performFly();
-            mallard.performQuack();
+            mallard.PerformFly();
+            mallard.PerformQuack();
             
             Duck model = new ModelDuck();
-            model.performFly();
-            model.setFlyBehavior(new FlyRocketPowered());
-            model.performFly();
+            model.PerformFly();
+            model.SetFlyBehavior(new FlyRocketPowered());
+            model.PerformFly();
             Console.ReadLine();
         }
     }

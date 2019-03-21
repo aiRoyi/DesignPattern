@@ -10,11 +10,11 @@ namespace Duck
     {
         public MallardDuck()
         {
-            quackBehavior = new Quack();
-            flyBehavior = new FlyWithWings();
+            QuackBehavior = new DuckQuack();
+            FlyBehavior = new FlyWithWings();
         }
 
-        public override void display()
+        public override void Display()
         {
             Console.WriteLine("I'm a real Mallard duck");
         }
