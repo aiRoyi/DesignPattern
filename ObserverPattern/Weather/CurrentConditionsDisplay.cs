@@ -8,24 +8,24 @@ namespace Weather
 {
     public class CurrentConditionsDisplay : Observer, DisplayElement
     {
-        private float temperature;
-        private float humidity;
-        private Subject weatherData;
+        private float Temperature;
+        private float Humidity;
+        private Subject WeatherData;
         public CurrentConditionsDisplay(Subject weatherData)
         {
-            this.weatherData = weatherData;
-            weatherData.registerObserver(this);
+            this.WeatherData = weatherData;
+            weatherData.RegisterObserver(this);
         }
-        public void display()
+        public void Display()
         {
-            Console.WriteLine("Current conditions:" + temperature + "F degrees and" + humidity + "% humidity");
+            Console.WriteLine("Current conditions:" + Temperature + "F degrees and" + Humidity + "% humidity");
         }
 
-        public void update(float temp, float humidity, float pressure)
+        public void Update(float temp, float humidity, float pressure)
         {
-            this.temperature = temp;
-            this.humidity = humidity;
-            display();
+            this.Temperature = temp;
+            this.Humidity = humidity;
+            Display();
         }
     }
 }

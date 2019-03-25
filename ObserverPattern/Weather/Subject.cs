@@ -8,17 +8,17 @@ namespace Weather
 {
     public interface Subject
     {
-        void registerObserver(Observer o);
-        void removeObserver(Observer o);
-        void notifyObservers();
+        void RegisterObserver(Observer o);
+        void RemoveObserver(Observer o);
+        void NotifyObservers();
     }
 
     public interface Observer
     {
-        void update(float temp, float humidity, float pressure);
+        void Update(float temp, float humidity, float pressure);
     }
     public interface DisplayElement
     {
-        void display();
+        void Display();
     }
 }

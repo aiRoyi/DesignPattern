@@ -8,42 +8,42 @@ namespace Weather
 {
     public class WeatherData : Subject
     {
-        private List<Observer> observers;
-        private float temperature;
-        private float humidity;
-        private float pressure;
+        private List<Observer> Observers;
+        private float Temperature;
+        private float Humidity;
+        private float Pressure;
         public WeatherData()
         {
-            observers = new List<Observer>();
+            Observers = new List<Observer>();
         }
-        public void notifyObservers()
+        public void NotifyObservers()
         {
-            for (int i= 0;i<observers.Count;i++)
+            for (int i= 0;i<Observers.Count;i++)
             {
-                Observer observer = observers[i];
-                observer.update(temperature, humidity, pressure);
+                Observer observer = Observers[i];
+                observer.Update(Temperature, Humidity, Pressure);
             }
         }
 
-        public void registerObserver(Observer o)
+        public void RegisterObserver(Observer o)
         {
-            observers.Add(o);
+            Observers.Add(o);
         }
 
-        public void removeObserver(Observer o)
+        public void RemoveObserver(Observer o)
         {
-            observers.Remove(o);
+            Observers.Remove(o);
         }
-        public void measurementsChanged()
+        public void MeasurementsChanged()
         {
-            notifyObservers();
+            NotifyObservers();
         }
-        public void setMeasurements(float temperature, float humidity, float pressure)
+        public void SetMeasurements(float temperature, float humidity, float pressure)
         {
-            this.temperature = temperature;
-            this.humidity = humidity;
-            this.pressure = pressure;
-            measurementsChanged();
+            this.Temperature = temperature;
+            this.Humidity = humidity;
+            this.Pressure = pressure;
+            MeasurementsChanged();
         }
     }
 }
